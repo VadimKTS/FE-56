@@ -4,8 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" />
-    <script src="./js/index.js" defer></script>
-    <title>Document</title>
+    <script type="module" src="./js/index.js" defer></script>
+    <title>TRELLO</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <h1>Trello</h1>
+      <span class="clock" id="clock">12:32</span>
+    </header>
+    <div class="board">
+      <div class="column todo">
+        <h2>TODO</h2>
+        <span class="card-counter"></span>
+        <ul class="cards-list">
+          <div class="card">
+            <h3>Title 1</h3>
+            <p>Description...</p>
+            <span class="user">User A</span>
+            <span class="time">10:00</span>
+            <button class="edit">EDIT</button>
+            <button class="delete">DELETE</button>
+          </div>
+          <!-- Добавьте другие карточки TODO -->
+        </ul>
+        <button class="add-todo">Add todo</button>
+      </div>
+      <div class="column in-progress">
+        <h2>IN PROGRESS</h2>
+        <span class="card-counter"></span>
+        <ul class="cards-list">
+          <div class="card">
+            <h3>Title 2</h3>
+            <p>Description...</p>
+            <span class="user">User B</span>
+            <span class="time">11:30</span>
+            <button class="back">BACK</button>
+            <button class="complete">COMPLETE</button>
+          </div>
+          <!-- Добавьте другие карточки IN PROGRESS -->
+        </ul>
+      </div>
+      <div class="column done">
+        <h2>DONE</h2>
+        <span class="card-counter"></span>
+        <ul class="cards-list">
+          <div class="card">
+            <h3>Title 3</h3>
+            <p>Description...</p>
+            <span class="user">User C</span>
+            <span class="time">14:00</span>
+            <button class="delete">DELETE</button>
+          </div>
+          <!-- Добавьте другие карточки DONE -->
+        </ul>
+        <button class="delete-all">Delete all</button>
+      </div>
+    </div>
+  </body>
 </html>
