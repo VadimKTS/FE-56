@@ -9,60 +9,78 @@
   </head>
   <body>
     <header class="header">
-      <h1>Trello</h1>
+      <h1>типа Trello</h1>
       <span class="clock" id="clock">12:32</span>
     </header>
     <div class="board">
       <div class="column todo">
-        <div class="column-header">
-          <h2>TODO</h2>
-          <span class="card-counter"></span>
-        </div>
-        <ul class="cards-list">
-          <div class="card">
-            <h3>Title 1</h3>
-            <p>Description...</p>
-            <span class="user">User A</span>
-            <span class="time">10:00</span>
-            <button class="edit">EDIT</button>
-            <button class="delete">DELETE</button>
+        <div class="column-top">
+          <div class="column-header">
+            <h2>TODO</h2>
+            <span class="card-counter"></span>
           </div>
-          <!-- Добавьте другие карточки TODO -->
-        </ul>
+          <ul class="cards-list">
+            <div class="card">
+              <div class="cadr-body">
+                <h3>Title 1</h3>
+                <p>Description...</p>
+                <span class="user">User A</span>
+                <span class="time">10:00</span>
+              </div>
+              <div class="card-buttons">
+                <button class="edit" id="openModal">EDIT</button>
+                <button class="delete">DELETE</button>
+              </div>
+            </div>
+            <!-- Добавьте другие карточки TODO -->
+          </ul>
+        </div>
         <button class="add-todo">Add todo</button>
       </div>
       <div class="column in-progress">
-        <div class="column-header">
-          <h2>IN PROGRESS</h2>
-          <span class="card-counter"></span>
-        </div>
-        <ul class="cards-list">
-          <div class="card">
-            <h3>Title 2</h3>
-            <p>Description...</p>
-            <span class="user">User B</span>
-            <span class="time">11:30</span>
-            <button class="back">BACK</button>
-            <button class="complete">COMPLETE</button>
+        <div class="column-top">
+          <div class="column-header">
+            <h2>IN PROGRESS</h2>
+            <span class="card-counter"></span>
           </div>
-          <!-- Добавьте другие карточки IN PROGRESS -->
-        </ul>
+          <ul class="cards-list">
+            <div class="card">
+              <div class="cadr-body">
+                <h3>Title 2</h3>
+                <p>Description...</p>
+                <span class="user">User B</span>
+                <span class="time">11:30</span>
+              </div>
+              <div class="card-buttons">
+                <button class="back">BACK</button>
+                <button class="complete">COMPLETE</button>
+              </div>
+            </div>
+            <!-- Добавьте другие карточки IN PROGRESS -->
+          </ul>
+        </div>
+        <div class="column-footer"></div>
       </div>
       <div class="column done">
-        <div class="column-header">
-          <h2>DONE</h2>
-          <span class="card-counter"></span>
-        </div>
-        <ul class="cards-list">
-          <div class="card">
-            <h3>Title 3</h3>
-            <p>Description...</p>
-            <span class="user">User C</span>
-            <span class="time">14:00</span>
-            <button class="delete">DELETE</button>
+        <div class="column-top">
+          <div class="column-header">
+            <h2>DONE</h2>
+            <span class="card-counter"></span>
           </div>
-          <!-- Добавьте другие карточки DONE -->
-        </ul>
+          <ul class="cards-list">
+            <div class="card">
+              <div class="cadr-body">
+                <h3>Title 3</h3>
+                <p>Description...</p>
+                <span class="user">User C</span>
+                <span class="time">14:00</span>
+              </div>
+              <!-- <button class="edit">EDIT</button> -->
+              <button class="delete">DELETE</button>
+            </div>
+            <!-- Добавьте другие карточки DONE -->
+          </ul>
+        </div>
         <button class="delete-all">Delete all</button>
       </div>
     </div>

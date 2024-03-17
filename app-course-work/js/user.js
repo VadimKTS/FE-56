@@ -1,13 +1,15 @@
-const getUserList = async () => {
+async function getUserList() {
   const response = await fetch('https://jsonplaceholder.typicode.com/users');
   const users = await response.json();
-  return users;
-};
+  return await users;
+}
 
 const getUserById = async id => {
   const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
   const user = await response.json();
-  return user;
+  return await user;
 };
+
+console.log();
 
 export {getUserList, getUserById};

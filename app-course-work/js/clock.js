@@ -18,7 +18,7 @@ export function currentTime() {
   ss = ss < 10 ? '0' + ss : ss;
 
   let time = hh + ':' + mm + ':' + ss + ' ' + session;
-  document.getElementById('clock').innerText = time;
+  document.getElementById('clock').innerHTML = time;
 
   setTimeout(function () {
     currentTime();
